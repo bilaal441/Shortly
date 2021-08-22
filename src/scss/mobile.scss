@@ -119,14 +119,6 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
-.flex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
 .showcase {
   padding-top: 2rem;
   &-image {
@@ -163,44 +155,180 @@ nav a:hover {
 }
 .Features {
   background: #f2f2f2;
-}
-.shorten {
-  text-align: center;
-  &-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    margin: 1.5rem 0.5rem;
-    padding: 1rem;
-    border-radius: 8px;
-    background-image: url(../images/bg-shorten-mobile.svg),
-      linear-gradient($color-Very-DarkBlue, $color-Very-DarkBlue);
-    background-repeat: no-repeat;
-    background-position: 100% 0, 100%;
-    top: -3rem;
-  }
-  &-field {
-    display: inline-block;
-    padding: 0.8rem 1.4rem;
-    width: 80%;
-    outline: none;
-    color: #333;
-    font-size: 1rem;
-    &::placeholder {
+  padding-bottom: 6rem;
+
+  .shorten {
+    text-align: center;
+    margin-top: 3.5rem;
+    &-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+      margin: 1.5rem 0.5rem;
+      padding: 1rem;
+      border-radius: 8px;
+      background-image: url(../images/bg-shorten-mobile.svg),
+        linear-gradient($color-Very-DarkBlue, $color-Very-DarkBlue);
+      background-repeat: no-repeat;
+      background-position: 100% 0, 100%;
+      top: -3rem;
+    }
+    &-field {
+      display: inline-block;
+      padding: 0.8rem 1.4rem;
+      width: 80%;
+      outline: none;
       color: #333;
       font-size: 1rem;
+      &::placeholder {
+        color: #333;
+        font-size: 1rem;
+      }
+    }
+    & button {
+      padding: 0.7rem 1rem;
+      width: 80%;
+      font-size: 1rem;
+    }
+
+    & .message {
+      opacity: 0;
     }
   }
-  & button {
-    padding: 0.7rem 1rem;
-    width: 80%;
-    font-size: 1rem;
-  }
 
-  & .message {
-    opacity: 0;
+  .feature {
+    margin-top: 7rem;
+    padding: 3.5rem 2rem;
+    text-align: center;
+    background: #fff;
+    position: relative;
+  }
+  .intro {
+    margin-top: 2rem;
+    padding: 2rem;
+    text-align: center;
+    background: inherit;
+  }
+  .title {
+    font-size: 2rem;
+    line-height: 1.7rem;
+    margin: 1.5rem 0rem;
+    color: $color-Very-DarkBlue;
+    text-transform: capitalize;
+  }
+  .stat-content {
+    color: $color-gray;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    padding: 0.5rem;
+  }
+  .stat-icon {
+    background: $color-Very-DarkBlue;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    @include align-centre;
+    position: absolute;
+    top: -2.75rem;
+    right: calc(50% - 2.75rem);
+    & img {
+      width: 50%;
+    }
+  }
+  .stat-line {
+    background: $color-Primary-cyan;
+    width: 0.5rem;
+    height: 10rem;
+    text-align: center;
+    margin: 0rem auto;
+    padding: 0rem;
+    position: absolute;
+    top: -7rem;
+    right: calc(50% - 0.2rem);
+  }
+}
+
+.boost {
+  @include align-centre;
+  background-image: url(../images/bg-boost-mobile.svg),
+    linear-gradient($color-Very-DarkBlue, $color-Very-DarkBlue);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  padding: 5.625rem 0rem;
+
+  &-title {
+    color: #fff;
+    font-size: 2.3rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  & button {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+  }
+}
+
+.footer {
+  @include align-centre;
+  background: #232127;
+  margin-top: -3rem;
+  &-logo {
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+    width: 10rem;
+    & img {
+      width: 100%;
+    }
+  }
+  &-box {
+    margin: 1.1rem 0rem;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  &-box__logo {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 1.4rem;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+  }
+  &-item_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &-item {
+    margin: 0.5rem 0rem;
+  }
+  &-link {
+    color: $color-gray;
+    font-size: 1.1rem;
+    font-weight: normal;
+    line-height: 1.2rem;
+    text-align: center;
+    letter-spacing: 0.7px;
+    text-transform: capitalize;
+    transition: color 1s ease-in-out;
+    &:hover {
+      color: $color-Primary-cyan;
+    }
+  }
+  &-social {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0rem;
+    &-icon {
+      margin-right: 1.3rem;
+      width: 2rem;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        background: darken($color: $color-Primary-cyan, $amount: 20);
+      }
+    }
   }
 }
 
