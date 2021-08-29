@@ -13,7 +13,7 @@ class Showcase extends View {
     <div class="showcase-image">
     <img src="${showcaseImg}" alt="working" />
   </div>
-
+  <div class="getstarted">
   <h1 class="showcase-title">More than just shorter links</h1>
 
   <p class="showcase-text">
@@ -23,6 +23,7 @@ class Showcase extends View {
 
   <button class="btn-primary">Get Started</button>
 
+  </div>
 
  `;
   }

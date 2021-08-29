@@ -21,11 +21,11 @@ class features extends View {
       class="shorten-field"
       placeholder="Shorten a link here"
     />
-    <div class="message">please add a link</div>
+    <div class="message error">please add a link</div>
     <button class="btn-secondery">Shorten It!</button>
   </div>
     </div>
-    <div class=" intro flex">
+    <div class=" intro">
         <h2 class="title">Advanced Statistics</h2>
         <p class="stat-content">
           Track how your links are performing across the web with our advanced
@@ -33,7 +33,7 @@ class features extends View {
         </p>
       </div>
 
-      <div class="stats flex">
+      <div class="stats">
         <div class="feature">
           <div class="stat-icon">
             <img src="${iconBrand}" alt="" />

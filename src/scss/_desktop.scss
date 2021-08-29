@@ -1,0 +1,299 @@
+@media screen and (min-width: 950px) {
+  .nav-toggle-label {
+    display: none;
+    opacity: 0;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 130px auto;
+    width: auto;
+    text-align: center;
+    margin: 1rem auto;
+    padding-left: 10%;
+    padding-top: 1rem;
+    gap: 3rem;
+    & .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 7.5rem;
+      margin-left: 0;
+      margin-top: 0rem;
+    }
+
+    & .nav {
+      // // all: unset; /* this causes issues with Edge, since it's unsupported */
+
+      // /* the following lines are not from my video, but add Edge support */
+      position: static;
+      text-align: left;
+      transition: none;
+      transform: scale(1, 1);
+      background: none;
+      top: initial;
+      left: initial;
+      /* end Edge support stuff */
+      transform-origin: unset;
+      all: unset;
+      margin: 0;
+      padding: 0;
+      top: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      grid-auto-flow: 100%;
+      text-align: center;
+      justify-items: center;
+      display: grid;
+      grid-template-columns: 40% auto;
+      padding-right: 10%;
+
+      &__list {
+        grid-auto-columns: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        text-align: left;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 0;
+      }
+      &-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      &__item {
+        margin: 0.5rem 1rem;
+        padding: 5px;
+      }
+
+      &__link {
+        opacity: 1;
+        color: #9d98aa;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 700;
+        letter-spacing: 0;
+        cursor: pointer;
+        line-height: 1.45rem;
+        font-style: bold;
+      }
+      .login {
+        border: none !important;
+        padding-top: 0rem;
+        margin-left: 0.5rem;
+      }
+      & .btn-primary {
+        padding: 0.9rem 1.8rem;
+        font-size: 1.3rem;
+        margin-top: 0rem;
+        font-weight: 700;
+        font-style: normal;
+        color: #fff;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .showcase {
+    display: flex;
+    flex-direction: row-reverse;
+    overflow-x: hidden;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 10%;
+    &-image {
+      display: flex;
+      align-items: flex-start;
+      & img {
+        width: 100%;
+        height: 100%;
+        margin-left: 3rem;
+      }
+    }
+    &-title {
+      font-size: 5rem;
+      line-height: 5.5rem;
+      font-style: normal;
+      text-align: left;
+      margin-top: 0.5rem;
+      padding: 10px;
+      letter-spacing: 0;
+      text-align: left;
+    }
+    & .getstarted {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    &-text {
+      font-size: 1.5rem;
+      line-height: 2.3rem;
+      padding: 2px;
+      margin-bottom: 1rem;
+      text-align: left;
+    }
+  }
+  .Features {
+    & .shorten {
+      text-align: left;
+      margin-top: 5rem;
+      &-links {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        background-image: url(../images/bg-shorten-desktop.svg),
+          linear-gradient($color-Very-DarkBlue, $color-Very-DarkBlue);
+        background-repeat: no-repeat;
+        width: auto;
+        margin: 2rem 17%;
+        min-height: 100px;
+        text-align: left;
+        padding: 2rem 1rem;
+        position: relative;
+      }
+      &-field {
+        font-size: 1.4rem;
+        max-width: 800px;
+        padding: 1.1rem 2rem;
+        font-weight: 700;
+        margin-left: 1.2rem;
+        border-radius: 10px;
+      }
+      & button {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        padding: 1.2rem 2rem;
+        max-width: 6rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 1.6rem;
+        text-align: center;
+        border-radius: 10px;
+        margin-top: 0rem;
+        margin-left: 1rem;
+        flex-grow: none;
+        max-height: 2rem;
+        letter-spacing: 0;
+        align-self: center;
+      }
+
+      & .message {
+        position: absolute;
+        top: 69%;
+        left: 3rem;
+        opacity: 1;
+        font-size: 1rem;
+        padding: 0.4rem 1rem;
+        display: none;
+      }
+    }
+    .feature {
+      margin-top: 0;
+      width: auto;
+    }
+    .stat-content {
+      line-height: 2rem;
+    }
+    .intro {
+      margin: 0 auto;
+      width: 40%;
+      & p {
+        font-size: 1.4rem;
+        letter-spacing: 0.006rem;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 2.5rem;
+      }
+    }
+    .stat-line {
+      margin: auto;
+      width: 2rem;
+      height: 0.5rem;
+      top: 30%;
+      left: -60%;
+      margin: auto;
+    }
+    .stats {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 2rem;
+      text-align: center;
+      margin: 2rem 10%;
+      & .feature:nth-child(2) {
+        margin-top: 5rem;
+      }
+      & .feature:last-child {
+        margin-top: 10rem;
+      }
+    }
+    .stat-icon {
+      left: 1.5rem;
+      & img {
+        width: 60%;
+      }
+    }
+  }
+
+  .boost {
+    background-image: url(../images/bg-boost-desktop.svg),
+      linear-gradient($color-Very-DarkBlue, $color-Very-DarkBlue);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    & button {
+      font-weight: 700;
+    }
+  }
+
+  .footer {
+    padding: 3.5rem 10%;
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    &-logo {
+      grid-column: 1/8;
+      display: flex;
+      align-items: center;
+    }
+    &-items-container {
+      grid-column: 9/20;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: flex-start;
+      justify-content: center;
+      margin-right: 2rem;
+      gap: 2rem;
+    }
+    &-box {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      text-align: left;
+    }
+    .footer-social {
+      grid-column: 21/25;
+    }
+  }
+}

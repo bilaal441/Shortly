@@ -17,7 +17,7 @@ class Footer extends View {
     <div class="footer-logo">
     <img src="${logoFooter}" alt="shortly" />
   </div>
-  <a href="" class="footer-link"></a>
+  <div class="footer-items-container">
   <div class="footer-box">
     <h4 class="footer-box__logo">Features</h4>
     <ul class="footer-item_container">
@@ -62,6 +62,7 @@ class Footer extends View {
         <a href="#" class="footer-link">Contact</a>
       </li>
     </ul>
+  </div>
   </div>
   <div class="footer-social">
   <a href="https://en-gb.facebook.com/">
