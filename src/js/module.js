@@ -1,4 +1,4 @@
-import {AJAX} from "./Helper.js";
+import {AJAX} from "./helper.js";
 import {API_URL} from "./config.js";
 
 export const state = {
