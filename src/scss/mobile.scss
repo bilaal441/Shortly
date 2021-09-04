@@ -194,6 +194,7 @@ header .logo {
       }
     }
     & button {
+      position: relative;
       padding: 0.7rem 1rem;
       width: 80%;
       font-size: 1rem;
@@ -209,6 +210,54 @@ header .logo {
       transform: translateX(2.6rem);
       font-weight: 700;
       display: none;
+    }
+    & .result {
+      margin: 1.5rem 0.5rem;
+      padding: 1rem 3rem;
+      width: auto;
+      margin: 1rem;
+      text-align: left;
+
+      &-conainer {
+        text-align: center;
+        width: inherit;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        padding: 1.5rem;
+      }
+      &-long_link {
+        display: inline-block;
+        font-size: 1rem;
+        text-align: left;
+        color: #333;
+        font-weight: 700;
+        margin: 1rem 0;
+      }
+      &-small__link {
+        margin-top: 0.5rem;
+        color: $color-Primary-cyan;
+        font-weight: 700;
+        font-size: 1.3rem;
+        font-style: bold;
+      }
+
+      &-small {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        width: 80%;
+
+        & button {
+          padding: 0.8rem 1.5rem !important;
+          width: 100% !important;
+        }
+      }
     }
   }
 

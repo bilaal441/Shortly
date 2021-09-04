@@ -2,6 +2,10 @@
 
 @import "variables";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: $font-stack;
   font-weight: 400;
@@ -41,6 +45,77 @@ body {
   justify-content: center;
   text-align: center;
 }
-// .flex {
-//   @include align-centre;
-// }
+
+.spinner {
+  margin: 5rem auto;
+  text-align: center;
+
+  & svg {
+    height: 6rem;
+    width: 6rem;
+    fill: $color-Secondary-red;
+    animation: rotate 3s infinite linear;
+  }
+}
+
+.errorMessage {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 5rem 4rem;
+
+  display: flex;
+
+  svg {
+    height: 3rem;
+    width: 3rem;
+    fill: $color-Secondary-red;
+    transform: translateY(-0.3rem);
+  }
+
+  p {
+    margin-left: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+}
+
+.coppied {
+  background: $color-Very-DarkBlue;
+}
+
+.button__text {
+  color: #ffffff;
+  transition: all 0.2s;
+}
+
+.button--loading .button__text {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.button--loading::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 4px solid transparent;
+  border-top-color: $color-Secondary-red;
+  border-radius: 50%;
+  animation: button-loading-spinner 1s ease infinite;
+}
+
+@keyframes button-loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}

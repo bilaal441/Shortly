@@ -15,16 +15,23 @@ class features extends View {
     return `
 
     <div class="shorten">
-    <div class="shorten-links">
+    <form class="shorten-links">
     <input
       type="text"
       class="shorten-field"
       placeholder="Shorten a link here"
     />
     <div class="message error">please add a link</div>
-    <button class="btn-secondery">Shorten It!</button>
+    <button class="btn-secondery button-shorten"><span class="button__text">Shorten It!</span></button>
+  </form>
+
+  <div class="result"> 
+ 
+</div>
+  
   </div>
     </div>
+    
     <div class=" intro">
         <h2 class="title">Advanced Statistics</h2>
         <p class="stat-content">

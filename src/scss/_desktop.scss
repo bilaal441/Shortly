@@ -156,10 +156,32 @@
         background-repeat: no-repeat;
         width: auto;
         margin: 2rem 17%;
+        margin-bottom: 0.5rem;
         min-height: 100px;
         text-align: left;
         padding: 2rem 1rem;
         position: relative;
+
+        & button {
+          display: flex;
+          align-content: center;
+          align-items: center;
+          justify-content: center;
+          padding: 1.2rem 2rem;
+          max-width: 6rem;
+          font-size: 1.2rem;
+          font-weight: 700;
+          font-style: normal;
+          line-height: 1.6rem;
+          text-align: center;
+          border-radius: 10px;
+          margin-top: 0rem;
+          margin-left: 1rem;
+          flex-grow: none;
+          max-height: 2rem;
+          letter-spacing: 0;
+          align-self: center;
+        }
       }
       &-field {
         font-size: 1.4rem;
@@ -168,26 +190,6 @@
         font-weight: 700;
         margin-left: 1.2rem;
         border-radius: 10px;
-      }
-      & button {
-        display: flex;
-        align-content: center;
-        align-items: center;
-        justify-content: center;
-        padding: 1.2rem 2rem;
-        max-width: 6rem;
-        font-size: 1.2rem;
-        font-weight: 700;
-        font-style: normal;
-        line-height: 1.6rem;
-        text-align: center;
-        border-radius: 10px;
-        margin-top: 0rem;
-        margin-left: 1rem;
-        flex-grow: none;
-        max-height: 2rem;
-        letter-spacing: 0;
-        align-self: center;
       }
 
       & .message {
@@ -198,6 +200,68 @@
         font-size: 1rem;
         padding: 0.4rem 1rem;
         display: none;
+      }
+
+      & .result {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        width: auto;
+        margin: 1rem 17%;
+
+        &-conainer {
+          background: #fff;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          text-align: center;
+          padding: 1.3rem;
+        }
+        &-long_link {
+          font-size: 1rem;
+          text-align: left;
+          color: #333;
+          font-weight: 700;
+        }
+        &-small__link {
+          color: $color-Primary-cyan;
+          font-weight: 700;
+          font-size: 1.3rem;
+          font-style: bold;
+          margin-left: 2rem;
+          width: auto;
+        }
+
+        &-small {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          text-align: center;
+          width: auto;
+
+          & button {
+            padding: 0.8rem 1.5rem !important;
+            width: 4rem !important;
+            margin-top: 0rem;
+            margin-left: 1rem;
+            display: flex;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            padding: 1.2rem 2rem;
+            max-width: 6rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            font-style: normal;
+            line-height: 1.6rem;
+            text-align: center;
+            border-radius: 10px;
+            max-height: 2rem;
+            letter-spacing: 0;
+            align-self: center;
+          }
+        }
       }
     }
     .feature {
